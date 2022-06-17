@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link href="desktop.css" rel="stylesheet" />
+    <link href="mobile.css" rel="stylesheet" />
+    <script src="java.js"></script>
+  </head>
+  <body>
+    <div class="whole">
+      <div class="left">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problem in real time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="right">
+        <div class="right-top">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </div>
+        <div class="right-bottom">
+          <form onsubmit="return check()" novalidate action="index.html">
+            <div>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+                minlength="2"
+                maxlength="10"
+                required
+              />
+              <div id="cfname" class="emsg"></div>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+                minlength="2"
+                maxlength="10"
+                required
+              />
+              <div id="clname" class="emsg"></div>
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                required
+              />
+              <div id="cemail" class="emsg"></div>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <div id="cpassword" class="emsg"></div>
+            </div>
+            <p>
+              <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            </p>
+            <p>
+              <strong>
+                By clicking the button you are agreeing to our
+                <a href="#">Terms and Services</a>
+              </strong>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
